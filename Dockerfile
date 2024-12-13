@@ -27,7 +27,7 @@ RUN python3 -m pip install llvmlite --ignore-installed
 COPY builder/requirements.txt /requirements.txt
 RUN python3 -m pip install pip -U
 RUN python3 -m pip install torch torchaudio --extra-index-url https://download.pytorch.org/whl/cu118
-RUN python3 -m pip install TTS -U
+RUN python3 -m pip install coqui-tts
 RUN python3 -m pip install runpod
 RUN rm -rf /root/.cache/pip
 # NOTE: The base image comes with multiple Python versions pre-installed.
