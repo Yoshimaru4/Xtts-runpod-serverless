@@ -37,4 +37,4 @@ RUN rm -rf /root/.cache/pip
 # Add src files (Worker Template)
 ADD src .
 
-CMD python -u /handler.py
+CMD python3 handler.py
