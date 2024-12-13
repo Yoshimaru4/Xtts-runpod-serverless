@@ -33,8 +33,6 @@ def handler(job):
     json_data = {
         "text": text, 
         "wav": [float(x) for x in wav],  # FastAPI does not support numpy types, only support native python types
-        "output_sample_rate": tts.config.audio.output_sample_rate,
-        "sample_rate": tts.config.audio.sample_rate,
     }
 
     return json_data
