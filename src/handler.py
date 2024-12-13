@@ -19,11 +19,12 @@ def handler(job):
     """ Handler function that will be used to process jobs. """
     job_input = job['input']
     text = job_input.get('text')
-    
+    speaker = job_input.get('speaker')
+    language = job_input.get('language')
     wav = tts.tts(
         text=text,
-        speaker="Ana Florence",
-        language="ru",
+        speaker=speaker,
+        language=language,
     )
 
     print("ran inference successfully !!!!!!")
