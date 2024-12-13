@@ -6,3 +6,7 @@
 # To learn more, see https://pip.pypa.io/en/stable/reference/requirements-file-format/
 
 runpod~=1.7.0
+TTS
+torch ==2.2.2
+torchvision
+torchaudio #==2.1.2
