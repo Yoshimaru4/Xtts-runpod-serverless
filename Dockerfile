@@ -36,5 +36,5 @@ RUN rm -rf /root/.cache/pip
 
 # Add src files (Worker Template)
 ADD src .
-RUN model_setup.sh
-CMD echo "y" | python3 handler.py
+#RUN model_setup.sh
+CMD echo "y" | python3 model_setup.py | echo "y" | python3 handler.py
